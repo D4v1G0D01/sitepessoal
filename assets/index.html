@@ -1,38 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Nome - Portfólio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"> </head>
+    <title>Meu Site Pessoal</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            </nav>
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Davi Godoi Grilo</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#perfil">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#repositorios">Repositórios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#carrossel">Conteúdos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#colegas">Colegas</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="perfil" class="container">
-            </section>
+    <!-- Seção 1: Perfil -->
+    <section id="perfil" class="container mt-5">
+        <div class="text-center">
+            <img src="/assets/img/imgperfil.png" class= "rounded-circle" alt="Avatar" width="150" height="150">
+            <h2>Davi Godoi Grilo</h2>
+            <p>Descrição do seu perfil no GitHub.</p>
+            <div class="d-flex justify-content-center">
+                <a href="mailto:davigodoigrilo@gmail.com" class="btn btn-primary mx-2">Email</a>
+                <a href="https://www.linkedin.com/in/seu-perfil" class="btn btn-primary mx-2">LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
-        <section id="repositorios" class="container">
-            </section>
+    <!-- Seção 2: Repositórios -->
+    <section id="repositorios" class="container mt-5">
+        <h2 class="text-center">Meus Repositórios</h2>
+        <div class="row">
+            <!-- Exemplo de Card de Repositório -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Repositório 1</h5>
+                        <p class="card-text">Descrição breve do repositório.</p>
+                        <a href="repo.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repetir para outros repositórios -->
+        </div>
+    </section>
 
-        <section id="conteudo-sugerido" class="container">
-            </section>
+    <!-- Seção 3: Carrossel -->
+    <section id="carrossel" class="container mt-5">
+        <h2 class="text-center">Conteúdos</h2>
+        <div id="contentCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Exemplo de Item do Carrossel -->
+                <div class="carousel-item active">
+                    <img src="img/conteudo1.jpg" class="d-block w-100" alt="Conteúdo 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Título do Conteúdo 1</h5>
+                        <p>Descrição do conteúdo 1.</p>
+                    </div>
+                </div>
+                <!-- Repetir para outros conteúdos -->
+            </div>
+            <a class="carousel-control-prev" href="#contentCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#contentCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
 
-        <section id="colegas-trabalho" class="container">
-            </section>
-    </main>
+    <!-- Seção 4: Colegas -->
+    <section id="colegas" class="container mt-5 mb-5">
+        <h2 class="text-center">Colegas</h2>
+        <div class="row">
+            <!-- Exemplo de Card de Colega -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <img src="img/colega1.jpg" class="rounded-circle mb-3" alt="Colega 1" width="100" height="100">
+                        <h5 class="card-title">Nome do Colega 1</h5>
+                        <p class="card-text">Descrição do colega.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repetir para outros colegas -->
+        </div>
+    </section>
 
-    <footer class="bg-dark text-light text-center py-3">
-        <p>&copy; 2024 Davi Godoi Grilo</p>
+    <!-- Rodapé -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>© 2024 Davi Godoi Grilo - Todos os direitos reservados</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script> </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
