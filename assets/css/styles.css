@@ -1,34 +1,138 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
 }
 
 header {
-    background-color: black;
+    background-color:#59443a;
     color: white;
+    padding: 1rem 0;
+    padding-left: 50px;
+}
+p{
+    max-width: 35%;
+}
+.nome-topo{
+   max-width: 15%;
+   background-color: #84813c;
+   border-radius: 30%;
+   margin: 1;
+   padding: 1rem 0;
+   padding-left: 1rem;
+
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 section {
     padding: 2rem 0;
 }
-
-footer {
-    background-color:black;
-    color: white;
+.rounded-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+}
+#perfil {
+    background-color: white ;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
-.card-title, .card-text {
-    margin-bottom: 1rem;
+#perfil h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#perfil p {
+    color: #6c757d;
+}
+
+#perfil .btn {
+    margin-top: 1rem;
+}
+
+#repositorios {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#repositorios h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #6c757d;
 }
 
 .carousel-item img {
     height: 400px;
     object-fit: cover;
+    border-radius: 0.5rem;
 }
 
-.nav-link {
-    color: white !important;
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
-.nav-link:hover {
-    text-decoration: underline;
+#colegas {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#colegas h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.card-body img {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
 }
