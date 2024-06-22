@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: black;
     color: white;
 }
 
@@ -12,7 +12,7 @@ section {
 }
 
 footer {
-    background-color: #007bff;
+    background-color:black;
     color: white;
 }
 
