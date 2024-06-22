@@ -6,7 +6,7 @@ async function loadInfos() {
     const response = await fetch(`https://api.github.com/users/${user}`, {
       method: 'GET',
       headers: {
-        Authorization: `token ${my_token}` // Removido o "Bearer"
+    //    Authorization: `token ${my_token}` // Removido o "Bearer"
       }
     });
 
@@ -32,7 +32,7 @@ async function loadInfos() {
     const responseRepos = await fetch(`https://api.github.com/users/${user}/repos`, {
       method: 'GET',
       headers: {
-        Authorization: `token ${my_token}`
+      //  Authorization: `token ${my_token}`
       }
     });
     const repos = await responseRepos.json();
@@ -62,7 +62,7 @@ async function loadInfos() {
         const responseColega = await fetch(`https://api.github.com/users/${colega}`, {
           method: 'GET',
           headers: {
-            Authorization: `token ${my_token}`
+          //  Authorization: `token ${my_token}`
           }
         });
 

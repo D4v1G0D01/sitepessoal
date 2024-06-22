@@ -8,7 +8,7 @@ async function loadData() {
   try {
     const response = await fetch(`https://api.github.com/repos/${queryOwner}/${queryName}`, {
       method: 'GET',
-      headers: { Authorization: `token ${my_token}` }
+      //headers: { Authorization: `token ${my_token}` }
     });
 
     if (!response.ok) {
