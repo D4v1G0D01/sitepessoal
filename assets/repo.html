@@ -4,42 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Repositório</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/repo.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="bg-primary text-white text-center py-3">
-        <h1>Detalhes do Repositório</h1>
+    <header class="header">
+        <a id="headerCommits" href="#">Commits</a> |
+        <a id="headerIssues" href="#">Issues</a> |
+        <a id="headerInsights" href="#">Insights</a>
     </header>
 
-    <!-- Seção de Detalhes -->
-    <section class="container mt-5 mb-5">
+    <section class="container">
         <div class="card">
             <div class="card-body">
-                <h2 class="card-title">Nome do Repositório</h2>
-                <p class="card-text">Descrição completa do repositório.</p>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>Data de Criação:</strong> 01/01/2024</li>
-                    <li class="list-group-item"><strong>Proprietário:</strong> <img src="img/avatar.jpg" class="rounded-circle" alt="Avatar" width="30" height="30"> Seu Nome</li>
-                    <li class="list-group-item"><strong>URL de Acesso:</strong> <a href="#">Link do Repositório</a></li>
-                    <li class="list-group-item"><strong>Linguagem Principal:</strong> JavaScript</li>
-                    <li class="list-group-item"><strong>Tags:</strong> tag1, tag2, tag3</li>
-                    <li class="list-group-item"><strong>Estrelas:</strong> 10</li>
-                    <li class="list-group-item"><strong>Observadores:</strong> 5</li>
-                    <li class="list-group-item"><strong>Forks:</strong> 3</li>
-                    <li class="list-group-item"><strong>Licença:</strong> MIT</li>
+                <h2 id="repoTitle" class="card-title"></h2>
+                <p id="repoDesc" class="card-text"></p>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Data de Criação:</strong> <span id="repoCreationDate"></span></li>
+                    <li class="list-group-item"><strong>Proprietário:</strong> <img src="" id="repoAvatar" class="avatar" alt="Avatar"> <span id="repoOwner"></span></li>
+                    <li class="list-group-item"><strong>URL de Acesso:</strong> <a id="repoLink" href="#"></a></li>
+                    <li class="list-group-item"><strong>Linguagem Principal:</strong> <span id="repoMainLang"></span></li>
+                    <li class="list-group-item"><strong>Tags:</strong> <span id="repoTopics"></span></li>
+                    <li class="list-group-item"><strong>Estrelas:</strong> <span id="repoStars"></span></li>
+                    <li class="list-group-item"><strong>Observadores:</strong> <span id="repoWatchers"></span></li>
+                    <li class="list-group-item"><strong>Licença:</strong> <span id="repoLicense"></span></li> 
                 </ul>
             </div>
         </div>
     </section>
 
-    <footer class="bg-primary text-white text-center py-3">
-        <p>© 2024 Seu Nome - Todos os direitos reservados</p>
+    <footer class="footer">
+        <p>© 2024Seu Nome - Todos os direitos reservados</p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/repo.js"></script>
 </body>
 </html>
