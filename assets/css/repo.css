@@ -12,7 +12,7 @@ body {
 
 /* Cabeçalho */
 .header {
-    background-color: #007bff;
+    background-color: #59443a;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -70,7 +70,7 @@ body {
 
 /* Rodapé */
 .footer {
-    background-color: #007bff;
+    background-color: #59443a;
     color: white;
     text-align: center;
     padding: 1rem 0;
