@@ -1,0 +1,39 @@
+{
+    "conteudo": [
+      [
+        {"id": "1", "image": ""},
+        {"id": "2", "image": ""},
+        {"id": "3", "image": ""},
+        {"id": "4", "image": ""},
+        {"id": "5", "image": ""}
+      ]      
+    ],
+    
+    "colegas":[
+        {
+            "id": "1",
+            "image": "/assets/img/alice.jpg",
+            
+            "name": "Alice Cazati",
+            "github": "https://github.com/alicecazati"
+        },
+        {
+            "id": "2",
+            "image": "/assets/img/filipi.jpg",
+            "name": "Filipi Perreira",
+            "github": "https://github.com/filipiipereira"
+        },
+        {
+            "id": "3",
+            "image": "/assets/img/sofia.jpg",
+            "name": "Sofia Grossi",
+            "github": "https://github.com/Sofia-0812"
+        },
+        {
+            "id": "4",
+            "image": "/assets/img/paula.jpg",
+            "name": "Paula Nogueira",
+            "github": "https://github.com/PaulaNogueiraC"
+        }
+    ]
+}
