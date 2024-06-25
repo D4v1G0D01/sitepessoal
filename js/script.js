@@ -56,7 +56,7 @@ async function loadInfos() {
     document.getElementById('reposTitle').innerHTML = `Repositórios (${repos.length})`;
 
     const team = document.getElementById('team');
-    const colegas = ['DGBBraga', 'GabrielRMA1', 'srbouleto', 'LeonardodeSouzaGalvao', 'piterofc'];
+    const colegas = ['Alice Cazati', 'Filipi Perreira', 'Sofia Grossi', 'Paula Nogueira'];
     colegas.forEach(async colega => {
       try {
         const responseColega = await fetch(`https://api.github.com/users/${colega}`, {
