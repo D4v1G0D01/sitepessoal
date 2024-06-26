@@ -14,25 +14,25 @@
             "id": "1",
             "image": "/assets/img/alice.jpg",
             
-            "name": "Alice Cazati",
+            "name": "alicecazati",
             "github": "https://github.com/alicecazati"
         },
         {
             "id": "2",
             "image": "/assets/img/filipi.jpg",
-            "name": "Filipi Perreira",
+            "name": "filipiipereira",
             "github": "https://github.com/filipiipereira"
         },
         {
             "id": "3",
             "image": "/assets/img/sofia.jpg",
-            "name": "Sofia Grossi",
+            "name": "Sofia-0812",
             "github": "https://github.com/Sofia-0812"
         },
         {
             "id": "4",
             "image": "/assets/img/paula.jpg",
-            "name": "Paula Nogueira",
+            "name": "PaulaNogueiraC",
             "github": "https://github.com/PaulaNogueiraC"
         }
     ]
