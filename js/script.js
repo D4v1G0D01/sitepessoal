@@ -56,7 +56,7 @@ async function loadInfos() {
     document.getElementById('reposTitle').innerHTML = `Repositórios (${repos.length})`;
 
     const team = document.getElementById('team');
-    const colegas = ['Alice Cazati', 'Filipi Perreira', 'Sofia Grossi', 'Paula Nogueira'];
+    const colegas = ['alicecazati', 'filipiipereira', 'Sofia-0812', 'PaulaNogueiraC'];
     colegas.forEach(async colega => {
       try {
         const responseColega = await fetch(`https://api.github.com/users/${colega}`, {
@@ -92,8 +92,11 @@ async function loadInfos() {
     const carouselInner = contentCarousel.querySelector('.carousel-inner');
 
     const contents = [
-      { image: 'assets/img/conteudo1.jpg', title: 'Título 1', description: 'Descrição 1' },
+      { image: 'assets/img/conteudo1.png', title: 'Título 1', description: 'Descrição 1' },
       { image: 'assets/img/conteudo2.jpg', title: 'Título 2', description: 'Descrição 2' },
+      { image: 'assets/img/conteudo3.jpg', title: 'Título 3', description: 'Descrição 3' },
+      { image: 'assets/img/conteudo4.jpg', title: 'Título 4', description: 'Descrição 4' },
+      { image: 'assets/img/conteudo5.jpg', title: 'Título 5', description: 'Descrição 5' },
       // ... mais conteúdos
     ];
 

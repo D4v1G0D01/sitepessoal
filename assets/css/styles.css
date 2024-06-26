@@ -124,6 +124,19 @@ section {
     border-radius: 0.5rem;
 }
 
+
+#colegas .row {
+    display: flex;   
+    flex-wrap: wrap;   
+    gap: 1.5rem;      
+    justify-content: center; 
+}
+
+#colegas .card {
+    flex: 1 1 250px;
+    max-width: 300px; 
+}
+
 #colegas {
     background-color: white;
     padding: 2rem;
