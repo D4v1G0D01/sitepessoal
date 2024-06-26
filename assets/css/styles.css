@@ -85,6 +85,19 @@ section {
     font-size: 1.8rem;
 }
 
+
+#repositorios .row {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem;      
+}
+
+#repositorios .card {
+    flex: 1 1 280px; 
+    min-width: 280px;
+    border: 1px solid #ddd; 
+}
+
 .card {
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -109,6 +122,19 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     border-radius: 0.5rem;
+}
+
+
+#colegas .row {
+    display: flex;   
+    flex-wrap: wrap;   
+    gap: 1.5rem;      
+    justify-content: center; 
+}
+
+#colegas .card {
+    flex: 1 1 250px;
+    max-width: 300px; 
 }
 
 #colegas {
