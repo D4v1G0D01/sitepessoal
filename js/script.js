@@ -6,7 +6,7 @@ async function loadInfos() {
     const response = await fetch(`https://api.github.com/users/${user}`, {
       method: 'GET',
       headers: {
-    //    Authorization: `token ${my_token}` // Removido o "Bearer"
+        Authorization: `token ${my_token}`
       }
     });
 
@@ -32,59 +32,53 @@ async function loadInfos() {
     const responseRepos = await fetch(`https://api.github.com/users/${user}/repos`, {
       method: 'GET',
       headers: {
-      //  Authorization: `token ${my_token}`
+        Authorization: `token ${my_token}`
       }
     });
     const repos = await responseRepos.json();
 
-    repos.forEach(repo => {
+    const specificRepos = repos.filter(repo => ['site-pessoal', 'aeds', 'aeds-2'].includes(repo.name));
+
+    specificRepos.forEach(repo => {
       const repoElement = document.createElement('div');
-      repoElement.classList.add('col-md-4'); // Adicionado para responsividade
+      repoElement.classList.add('card');
       repoElement.innerHTML = `
-        <a class="repo" href="repo.html?owner=${repo.owner.login}&repo=${repo.name}">
-          <h1>${repo.name}</h1>
-          <p>${repo.description || "Repositório sem descrição"}</p>
-          <div class="status">
-            <i class="fa-solid fa-star"><span>${repo.stargazers_count}</span></i>
-            <i class="fa-solid fa-user"><span>${repo.watchers}</span></i>
-          </div>
-        </a>
+        <div class="card-body">
+          <a class="repo" href="repo.html?owner=${repo.owner.login}&repo=${repo.name}">
+            <h1>${repo.name}</h1>
+            <p>${repo.description || "Repositório sem descrição"}</p>
+            <div class="status">
+              <i class="fa-solid fa-star"><span>${repo.stargazers_count}</span></i>
+              <i class="fa-solid fa-user"><span>${repo.watchers}</span></i>
+            </div>
+          </a>
+        </div>
       `;
       document.getElementById('repos').appendChild(repoElement);
     });
 
-    document.getElementById('reposTitle').innerHTML = `Repositórios (${repos.length})`;
+    document.getElementById('reposTitle').innerHTML = `Repositórios (${specificRepos.length})`;
 
     const team = document.getElementById('team');
-    const colegas = ['alicecazati', 'filipiipereira', 'Sofia-0812', 'PaulaNogueiraC'];
-    colegas.forEach(async colega => {
-      try {
-        const responseColega = await fetch(`https://api.github.com/users/${colega}`, {
-          method: 'GET',
-          headers: {
-            Authorization: `token ${my_token}`
-          }
-        });
+    const colegas = [
+      { name: 'alicecazati', image: '/assets/img/alice.jpeg', github: 'https://github.com/alicecazati' },
+      { name: 'filipiipereira', image: '/assets/img/filipi.jpeg', github: 'https://github.com/filipiipereira' },
+      { name: 'Sofia-0812', image: '/assets/img/sofia.jpeg', github: 'https://github.com/Sofia-0812' },
+      { name: 'PaulaNogueiraC', image: '/assets/img/paula.jpeg', github: 'https://github.com/PaulaNogueiraC' }
+    ];
 
-        if (!responseColega.ok) {
-          throw new Error(`Erro na requisição para o usuário ${colega}: ${responseColega.status} ${responseColega.statusText}`);
-        }
-
-        const dataColega = await responseColega.json();
-
-        const colegaElement = document.createElement('div');
-        colegaElement.classList.add('col-md-4'); // Adicionado para responsividade
-        colegaElement.innerHTML = `
-          <a href=${dataColega.html_url} class="person">
-            <img src="${dataColega.avatar_url}" alt="Avatar do colega ${colega}"/>
-            <p>${dataColega.login}</p>
+    colegas.forEach(colega => {
+      const colegaElement = document.createElement('div');
+      colegaElement.classList.add('card');
+      colegaElement.innerHTML = `
+        <div class="card-body">
+          <a href=${colega.github} class="person">
+            <img src="${colega.image}" alt="Avatar do colega ${colega.name}" class="rounded-circle"/>
+            <p>${colega.name}</p>
           </a>
-        `;
-        team.appendChild(colegaElement);
-      } catch (error) {
-        console.error("Erro ao carregar informações do colega:", error);
-        // Opcional: exibir uma mensagem de erro para o usuário
-      }
+        </div>
+      `;
+      team.appendChild(colegaElement);
     });
 
     // Carrossel (carregamento dinâmico)
@@ -93,11 +87,10 @@ async function loadInfos() {
 
     const contents = [
       { image: 'assets/img/conteudo1.png', title: 'Título 1', description: 'Descrição 1' },
-      { image: 'assets/img/conteudo2.jpg', title: 'Título 2', description: 'Descrição 2' },
-      { image: 'assets/img/conteudo3.jpg', title: 'Título 3', description: 'Descrição 3' },
-      { image: 'assets/img/conteudo4.jpg', title: 'Título 4', description: 'Descrição 4' },
-      { image: 'assets/img/conteudo5.jpg', title: 'Título 5', description: 'Descrição 5' },
-      // ... mais conteúdos
+      { image: 'assets/img/conteudo2.png', title: 'Título 2', description: 'Descrição 2' },
+      { image: 'assets/img/conteudo3.png', title: 'Título 3', description: 'Descrição 3' },
+      { image: 'assets/img/conteudo4.png', title: 'Título 4', description: 'Descrição 4' },
+      { image: 'assets/img/conteudo5.png', title: 'Título 5', description: 'Descrição 5' },
     ];
 
     contents.forEach((content, index) => {

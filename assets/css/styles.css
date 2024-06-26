@@ -6,23 +6,25 @@ body {
 }
 
 header {
-    background-color:#59443a;
+    background-color: #59443a;
     color: rgb(255, 255, 255);
     padding: 1rem 0;
     padding-left: 50px;
 }
-p{
+
+p {
     max-width: 35%;
 }
-.nome-topo{
-   max-width: 15%;
-   background-color: #84813c;
-   border-radius: 30%;
-   margin: 1;
-   padding: 1rem 0;
-   padding-left: 1rem;
 
+.nome-topo {
+    max-width: 15%;
+    background-color: #84813c;
+    border-radius: 30%;
+    margin: 1;
+    padding: 1rem 0;
+    padding-left: 1rem;
 }
+
 header nav ul {
     list-style: none;
     padding: 0;
@@ -47,17 +49,18 @@ header nav ul li {
 section {
     padding: 2rem 0;
 }
-.rounded-circle{
+
+.rounded-circle {
     width: 150px;
     height: 150px;
     border-radius: 15%;
 }
+
 #perfil {
-    background-color: white ;
+    background-color: white;
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
 }
 
 #perfil h2 {
@@ -84,7 +87,6 @@ section {
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
-
 
 #repositorios .row {
     display: flex; 
@@ -123,7 +125,6 @@ section {
     padding: 1rem;
     border-radius: 0.5rem;
 }
-
 
 #colegas .row {
     display: flex;   

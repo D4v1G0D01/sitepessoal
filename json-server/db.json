@@ -1,37 +1,37 @@
 {
     "conteudo": [
       [
-        {"id": "1", "image": ""},
-        {"id": "2", "image": ""},
-        {"id": "3", "image": ""},
-        {"id": "4", "image": ""},
-        {"id": "5", "image": ""}
+        {"id": "1", "image": "/assets/img/conteudo1.png"},
+        {"id": "2", "image": "/assets/img/conteudo2.png"},
+        {"id": "3", "image": "/assets/img/conteudo3.png"},
+        {"id": "4", "image": "/assets/img/conteudo4.png"},
+        {"id": "5", "image": "/assets/img/conteudo5.png"}
       ]      
     ],
     
     "colegas":[
         {
             "id": "1",
-            "image": "/assets/img/alice.jpg",
+            "image": "/assets/img/alice.jpeg",
             
             "name": "alicecazati",
             "github": "https://github.com/alicecazati"
         },
         {
             "id": "2",
-            "image": "/assets/img/filipi.jpg",
+            "image": "/assets/img/filipi.jpeg",
             "name": "filipiipereira",
             "github": "https://github.com/filipiipereira"
         },
         {
             "id": "3",
-            "image": "/assets/img/sofia.jpg",
+            "image": "/assets/img/sofia.jpeg",
             "name": "Sofia-0812",
             "github": "https://github.com/Sofia-0812"
         },
         {
             "id": "4",
-            "image": "/assets/img/paula.jpg",
+            "image": "/assets/img/paula.jpeg",
             "name": "PaulaNogueiraC",
             "github": "https://github.com/PaulaNogueiraC"
         }
